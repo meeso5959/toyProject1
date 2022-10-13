@@ -21,4 +21,9 @@ public class HomeController {
 		return "home";
 	}
 	
+	//달력으로 매핑하기 (임시) 
+	@RequestMapping(value = "/calendar.do")
+	public String Calendar() {
+		return "Calendar/Calendar";
+	}
 }

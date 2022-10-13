@@ -1,8 +1,11 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
-
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!--     이거 인코딩 오류 어쩌고 나서 위에다가 선언해줘야됨  -->
+    
 <!DOCTYPE html>
-<html lang="en">
+<html lang="EUC-KR">
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,7 +18,7 @@
 	<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/assets/css/joeblog.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    
+
     <!-- page First Navigation -->
     <nav class="navbar navbar-light bg-light">
         <div class="container">
@@ -67,7 +70,7 @@
                 </ul>
                 <div class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="components.html" class="ml-4 btn btn-dark mt-1 btn-sm">Components</a>
+                        <a href="calendar.do" class="ml-4 btn btn-dark mt-1 btn-sm">달력으로고고</a>
                     </li>
                 </div>
             </div>
