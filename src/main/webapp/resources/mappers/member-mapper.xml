@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="memberMapper">
+
+<resultMap id="memberResultSet" type="Member">
+		<id property="member_id" column="member_ID"/>
+		<result property="member_pw" column="member_PW"/>
+		<result property="member_name" column="user_NAME"/>
+		<result property="phone" column="PHONE"/>
+		<result property="email" column="EMAIL"/>
+		<result property="address" column="ADDRESS"/>
+		<result property="reg_day" column="reg_DAY"/>
+		<result property="modi_day" column="modi_DAY"/>
+		<result property="status" column="STATUS"/>
+		<result property="point" column="POINT"/>		
+	</resultMap>
+
+	<insert id="insertMember" parameterType="Member">
+		insert into member
+		values
+		(
+			#{member_id},
+			#{member_pw},
+			#{member_name},
+			#{phone},
+			#{email},
+			#{address},
+			sysdate,
+			sysdate,
+			default,
+			default
+		)
+	
+	</insert>
+ 
+
+</mapper>

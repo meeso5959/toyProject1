@@ -1,5 +1,9 @@
 package ms.com.member.service;
 
-public class MemberService {
+import ms.com.member.model.vo.Member;
+
+public interface MemberService {
+	
+	void insertMember(Member m);
 
 }
