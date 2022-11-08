@@ -28,5 +28,10 @@ public class HomeController {
 	}
 	
 	
+	@RequestMapping(value = "/insertMem")
+	public String insertMember() {
+		
+		return "insert.mem";
+	}
 	
 }
